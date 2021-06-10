@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pro Cleaners</title>
+   
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+
+<link
+    href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+    rel="stylesheet">
+    <!-- fontawesome cdn -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+            integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        /* RESET ALL */
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Nunito', sans-serif;
+        }
+    header,section,footer{
+        width: 100%;
+        }
+
+    nav{
+        margin: auto;
+        padding:10px 0;
+        width:72%
+    }
+
+    nav .brand-name h6,.tel h6{
+         font-size: 17px;
+        opacity: 0.7;
+         font-weight: 700; 
+    }
+
+    main{
+        background-image: url("./images/cohort3.jpg");
+        background-repeat: no-repeat;
+        }
+
+   .overlay{
+    background: rgba(0,0,0, 0.5);
+    width: 100%;
+   }
+
+.all-container{
+    margin: auto;
+    width: 75%;
+    padding: 5% 0 ;
+    color: #fff;
+ }
+ .text-wrapper,.form-container{
+     width: 50%;
+ }
+
+.text-wrapper h3{
+    font-size: 30px;
+}
+
+input{
+    font-size: 20px;
+    width: 89%;
+    height: 7vh;
+     padding: 5% 0 5% 5%; 
+     outline: none;
+     border: none;
+     border-radius: 3px;
+     font-weight:400;
+}
+
+
+.form-container{
+    background-color: rgba(0,0,0, 0.6);
+    padding:2% 0 5% 0;
+    border-radius: 5px;
+    
+}
+#signup-form{
+    line-height: 4;
+}
+.text{
+    margin-top:10px;
+    line-height: 1.5;
+}
+.div-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+     gap:40px 
+}
+
+.div-container .workers-level,.refund,.calender{  
+    text-align: center;
+    color: #000;  
+}
+
+.div-container .icon i{
+    font-size: 5em;
+    padding: 0.5em;
+    background-color: #F7F7F7;
+     border-radius: 50%;
+     color: #12d7e9;
+}
+
+.div-container h5{
+    font-size: 1.1em;
+    font-weight: 800;
+    margin-top: 7%;
+    opacity: 0.9;
+    
+}
+.div-container p{
+    font-size: 15px;
+    margin-top: 6%;
+    font-weight:600;
+    opacity: 0.9;
+}
+
+.first-client,.second-client{
+    width: 40%;
+}
+
+ .wrapper{
+     margin: auto;
+        padding:2% 0 5% 0;
+        width:72%
+ }
+ .wrapper img{
+     width: 45%;
+     height: 27vh;
+     border-radius: 50%;
+     border:5px solid #fff
+ }
+ .wrapper .name,hr,.message,.stars{
+     margin-top: 12px;
+     font-weight: 700;
+     font-style: italic;
+     opacity: 0.6;
+ }
+ .wrapper .stars i{
+     color: yellow
+ }
+ .brand-name,.tel{
+     width: 32%;
+ }
+  @media(max-width:900px) {
+     nav{
+         width: 100%;
+         padding:20px 50px ;
+     }
+     .tel{
+   /* width: 70%; */
+   text-align: start;
+     }
+     
+     .text-wrapper,.form-container ,.first-client, .second-client{
+        width: 100%; 
+        text-align: center;
+    
+     }
+      .form-container,.second-client{
+         margin-top: 5em;
+     }
+      .wrapper img{
+     width: 30%;
+     height: 30vh;
+     border-radius: 50%;
+     border:5px solid #fff
+ }
+     
+   }
+   @media(max-width:700px) {
+.div-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+      }
+      .workers-level,.refund,.calender {
+          width: 100%;
+           margin-bottom: 2em;
+      }
+       .wrapper img{
+     width: 40%;
+     height: 30vh;
+     border-radius: 50%;
+     border:5px solid #fff
+ }
+  nav{
+         
+         width: 100%;
+         font-size: 15px;
+         margin:0  50px 0 10px;
+     }
+     .brand-name{
+     width: 40%;
+    
+ }
+ .tel{
+     margin-right: 30px;
+      font-size: 5px;
+      width: 50%;
+ }
+      
+       
+
+   }
+  @media(max-width:500px){
+      
+     .text-wrapper h3{
+         font-size: 25px;
+     }
+     .wrapper img{
+     width: 60%;
+     height: 30vh;
+     border-radius: 50%;
+     border:5px solid #fff
+    }
+     
+     .tel{
+         display: none;
+     }
+      .brand-name{
+     width: 100%;
+    
+ }
+      
+     footer>div{
+         font-size: 10px;
+         }
+      
+      }
+    </style>
+</head>
+<body>
+    <header>
+    <nav>
+
+  <div class="brand-name" style="float: left;">
+      <h6>
+        Pro Cleaners
+      </h6>
+     
+  </div>
+  <div class="tel" style="float:right;text-align: end;">
+      <h6>Phone: 1-800-222-3030</h6>
+   
+  </div>
+  <div style="clear:both"></div>
+</nav>
+</header>
+<main>
+ <div class="overlay">
+    <div class="all-container">
+
+        <div class="text-wrapper" style="float: left; margin:10% 0;">
+            <h3>Vancouver's Best </h3>
+            <h3>Home Cleaners</h3>
+            <p class="text">Pro Cleaning is voncouver's best cleaning service.For the qualities naid service vancouver's relies on, book one of our experience ,background-checked professionals to have your home clean in no time.</p>
+        </div>
+
+        <div class="form-container" style="float: right;text-align:center">
+ <h4 style="font-size: 25px;">Request Info & Booking</h4>
+ <p class="text">Fill this form and we'll contact you soon</p>
+ <form action="" onsubmit="processForm()" id="signup-form">
+     <input type="text" placeholder="Your Name" id="name" required>
+     <input type="email" placeholder="Your Email" id="email" required>
+     <input type="tel"placeholder="Your Phone" id="tel" required>
+     <input type="submit" value="Request Info & Booking"style="background:rgb(2,247,1);font-weight:700;opacity: 0.5;cursor: pointer;color:#fff">
+ </form>
+        </div>
+<div style="clear:both"></div>
+    </div>
+ </div>
+</main >
+<section class="characteristics">
+    <div class="all-container div-container">
+
+        <div class="workers-level">
+            <div class="icon"><i class="fas fa-user"></i></div>
+            <h5>Trusted professionals</h5>
+            <p>our professionals are experienced,friendly and background-checked</p>
+        </div>
+
+        <div class="calender">
+            <div class="icon">
+                <i class="fas fa-calendar-alt"></i>
+            </i>
+        </div>
+            <h5>Available Everyday</h5>
+            <p>We're available to serve you 7 days per week.we'll work around your schedule</p>
+        </div>
+
+        <div class="refund">
+            <div class="icon"><i class="fas fa-dollar-sign"style="font-weight:900"></i></i></div>
+            <h5>100% Money-Back Guarantee</h5>
+            <p>if you are not satisfied we'll refund all of your money.it's as simple as that</p>
+        </div>
+    </div>
+</section>
+<section class="about" style="background-color:#ebebeb;">
+    <div class="wrapper">
+        <h2 style="margin-bottom: 6%;text-align: center;">What Our Clients Have To Say</h2>
+        
+        <div class="first-client" style="float: left;text-align:center">
+   <img src="./images/ee760e0e0c44d24343f599d666fd9eb5.jpg" alt="">
+   <p class="name">Paulo Parra</p>
+   <hr>
+   <p class="message">The team was fast and friendly-bonestly my house hasn't been this clean in years</p>
+   <div class="stars">
+       <i class="fas fa-star"></i>
+       <i class="fas fa-star"></i>
+       <i class="fas fa-star"></i>
+       <i class="fas fa-star"></i>
+       <i class="fas fa-star"></i>
+</div>
+        </div>
+        
+        <div class="second-client"style="float:right;text-align:center">
+            <img src="./images/young-woman-looking-back-over-her-shoulder-park-portrait-beautiful-you-65786895.jpg" alt="">
+            <p class="name">Ana Carolina</p>
+            <hr>
+            <p class="message">it feels so great walking into a fresh,clean apartment everyday.These guys make my place spotless</p>
+         <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+        </div>
+            </div>
+
+        
+        <div style="clear:both"></div>
+
+    </div>
+</section>
+<footer style="background-color: rgb(49, 49, 49);">
+<div style=" margin: auto; padding:10px 0;width:72%;color:white">
+    <i class="far fa-copyright"></i>  Copyright :  All Rights Resesrved
+</div>
+</footer>
+
+<script>
+    // target form element to prevent default
+document.getElementById("signup-form").addEventListener("submit",(e)=>{
+e.preventDefault()
+})
+
+// ALERT USERS INFO
+const processForm=()=>{
+let fullName=document.getElementById("name").value
+let emailAddress=document.getElementById("email").value
+let telePhone=document.getElementById("tel").value
+
+let lineBreak="\n"
+alert(`Name: ${fullName} ${lineBreak}Email:${emailAddress} ${lineBreak}Contact : ${telePhone}`)
+
+}
+
+</script>
+</body>
+</html>
